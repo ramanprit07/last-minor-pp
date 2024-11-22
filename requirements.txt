@@ -2,7 +2,6 @@ streamlit
 streamlit_option_menu
 db
 pandas
-base64
 streamlit_lottie
 plotly.express
 pickle
@@ -13,3 +12,4 @@ os
 google.generativeai
 plotly.graph_objects
 PIL
+base64
