@@ -1,0 +1,15 @@
+streamlit
+streamlit_option_menu
+db
+pandas
+base64
+streamlit_lottie
+plotly.express
+pickle
+seaborn
+matplotlib.pyplot
+dotenv
+os
+google.generativeai
+plotly.graph_objects
+PIL
