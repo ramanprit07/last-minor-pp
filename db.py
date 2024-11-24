@@ -8,9 +8,11 @@ try:
     password='',
     db='user_database'
     )
-    print("Connected Sucessfully")
-except Exception as e:
-    print(f"Error is {e}")
+if connection.is_connected():
+            return connection
+    except mysql.connector.Error as e:
+        print(f"Error: {e}")
+        return None
     
 
 cursor= connection.cursor(buffered=True)
