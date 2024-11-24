@@ -8,9 +8,9 @@ try:
     password='',
     db='user_database'
     )
-if connection.is_connected():
+    if connection.is_connected():
             return connection
-    except mysql.connector.Error as e:
+except mysql.connector.Error as e:
         print(f"Error: {e}")
         return None
     
