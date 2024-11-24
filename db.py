@@ -11,8 +11,8 @@ try:
     if connection.is_connected():
         return connection
 except mysql.connector.Error as e:
-        print(f"Error: {e}")
-        return None
+    print(f"Error: {e}")
+    return None
     
 
 cursor= connection.cursor(buffered=True)
