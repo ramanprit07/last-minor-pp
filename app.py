@@ -529,7 +529,7 @@ def app():
 
 
     # st.markdown(css, unsafe_allow_html=True)
-
+app()
 
 
 
