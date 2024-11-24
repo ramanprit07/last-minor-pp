@@ -3,10 +3,10 @@ connection=None
 
 try:
     connection= mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='',
-    db='user_database'
+        host='localhost',
+        user='root',
+        password='',
+        db='user_database'
     )
     if connection.is_connected():
         return connection
