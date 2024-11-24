@@ -9,7 +9,7 @@ try:
     db='user_database'
     )
     if connection.is_connected():
-            return connection
+        return connection
 except mysql.connector.Error as e:
         print(f"Error: {e}")
         return None
