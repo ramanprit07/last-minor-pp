@@ -18,7 +18,7 @@ from streamlit_lottie import st_lottie
 
 import base64
 
-
+st.set_page_config(page_title="Health and Nutrition Analyzer", page_icon="🍎", layout="wide")
 def app():
     link="https://lottie.host/cb8ef2f3-bd57-4112-afe4-0d8b8289b61a/064ArtjIGg.json"
     link3="https://lottie.host/d1974fc2-cfbc-44bb-8923-11df75cf13de/tBmbzf2JwH.json"
