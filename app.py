@@ -387,43 +387,43 @@ def app():
                     raise FileNotFoundError("No file uploaded")
                 
 
-            # video_file = "vecteezy_burst-of-strawberry-blueberry-in-black-background_26656716.mp4"  # Replace with your local MP4 file
+            video_file = "vecteezy_burst-of-strawberry-blueberry-in-black-background_26656716.mp4"  # Replace with your local MP4 file
 
-            # # Encode the video file in base64
-            # video_base64 = base64.b64encode(open(video_file, "rb").read()).decode()
+            # Encode the video file in base64
+            video_base64 = base64.b64encode(open(video_file, "rb").read()).decode()
 
-            # # Create the HTML code for the video background
-            # video_html = """
-            # <style>
-            #     body {{
-            #         margin: 0;
-            #         background-color: #f0f0f0;
-            #     }}
-            #     video {{
-            #         position: fixed;
-            #         right: 0;
-            #         bottom: 0;
-            #         min-width: 100%;
-            #         min-height: 100%;
-            #     }}
-            #     .content {{
-            #         position: fixed;
-            #         bottom: 0;
-            #         background: rgba(0, 0, 0, 0.5);
-            #         color: #f1f1f1;
-            #         width: 100%;
-            #         padding: 20px;
-            #     }}
-            # </style>
-            # <video autoplay muted loop>
-            #     <source src="data:video/mp4;base64,{video_base64}">
-            #     Your browser does not support HTML5 video.
-            # </video>
+            # Create the HTML code for the video background
+            video_html = """
+            <style>
+                body {{
+                    margin: 0;
+                    background-color: #f0f0f0;
+                }}
+                video {{
+                    position: fixed;
+                    right: 0;
+                    bottom: 0;
+                    min-width: 100%;
+                    min-height: 100%;
+                }}
+                .content {{
+                    position: fixed;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    color: #f1f1f1;
+                    width: 100%;
+                    padding: 20px;
+                }}
+            </style>
+            <video autoplay muted loop>
+                <source src="data:video/mp4;base64,{video_base64}">
+                Your browser does not support HTML5 video.
+            </video>
 
-            # """.format(video_base64=video_base64)
+            """.format(video_base64=video_base64)
 
-            # Add the video background to the Streamlit app
-            # st.markdown(video_html, unsafe_allow_html=True)
+            Add the video background to the Streamlit app
+            st.markdown(video_html, unsafe_allow_html=True)
 
 
 
