@@ -422,7 +422,7 @@ def app():
 
             """.format(video_base64=video_base64)
 
-            Add the video background to the Streamlit app
+            # Add the video background to the Streamlit app
             st.markdown(video_html, unsafe_allow_html=True)
 
 
